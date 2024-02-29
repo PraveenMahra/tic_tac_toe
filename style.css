@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: #162a33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #00cbc2;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 20px;
+}
+
+.cell {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  transition: all 0.3s;
+  background-color: #1b3540;
+  box-shadow: 0 10px #0d212a;
+  border-radius: 10px;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.x {
+  font-weight: 900;
+  color: #00cbc2;
+  font-size: 50px;
+  border-radius: 20px;
+}
+
+.o {
+  font-weight: 900;
+  font-size: 50px;
+  color: #f8b62b;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 50px;
+  color: green;
+  font-weight: 900;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 15px 40px;
+  cursor: not-allowed;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+  transition: all 0.3s;
+  opacity: 0.3;
+}
+
+.reset-btn-active {
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  opacity: 1;
+}
+
+.cell-active:hover {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.cell-actives {
+  background-color: transparent;
+}
